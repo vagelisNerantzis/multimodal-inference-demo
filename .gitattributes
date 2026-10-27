@@ -1,0 +1,2 @@
+# Preserve byte-for-byte SVG regeneration on every checkout platform.
+assets/workflow.svg text eol=lf

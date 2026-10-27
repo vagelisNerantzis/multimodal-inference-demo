@@ -1,0 +1,50 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    name: Python 3.12 / CPU
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Upgrade pip
+        run: python -m pip install --upgrade pip
+      - name: Install project and development dependencies
+        run: python -m pip install -e ".[dev]"
+      - name: Compile package, tests, example and asset generator
+        run: python -m compileall src tests examples assets
+      - name: Run synthetic test suite
+        run: pytest -q
+      - name: Run end-to-end synthetic demo
+        run: python examples/run_demo.py
+      - name: Regenerate workflow figure
+        run: python assets/generate_workflow.py
+      - name: Check workflow figure reproducibility
+        run: git diff --exit-code -- assets/workflow.svg
+      - name: Verify package version
+        shell: python
+        run: |
+          import importlib.metadata
+          import pathlib
+          import tomllib
+          import multimodal_inference_demo
+
+          project = tomllib.loads(pathlib.Path("pyproject.toml").read_text(encoding="utf-8"))
+          assert project["project"]["version"] == multimodal_inference_demo.__version__ == importlib.metadata.version("multimodal-inference-demo") == "0.1.0"
+          print("Package, project and distribution version: 0.1.0")

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1165" height="590" viewBox="0 0 1165 590" role="img" aria-labelledby="title description">
+<title id="title">Synthetic physical-sample multimodal inference workflow</title>
+<desc id="description">Follow eight numbered steps: physical sample, available modalities, modality encoders, fusion, sample-level prediction, confidence and entropy, optional next modality recommendation, scientific report and provenance. A recommended observation can be explicitly supplied before rerunning inference.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#64748b"/></marker></defs>
+<rect width="1165" height="590" rx="20" fill="#f8fafc"/>
+<g font-family="sans-serif" fill="#0f172a">
+<text x="30" y="43" font-size="25" font-weight="700">Multimodal scientific inference</text>
+<text x="30" y="73" font-size="15" fill="#475569">A synthetic integration demo: physical identity remains attached throughout the workflow.</text>
+<rect x="30" y="115" width="250" height="150" rx="12" fill="white" stroke="#cbd5e1"/>
+<rect x="30" y="127" width="4" height="126" rx="2" fill="#0f766e"/>
+<text x="46" y="140" font-size="12" font-weight="700" fill="#0f766e">01</text>
+<text x="46" y="176" font-size="18" font-weight="600">Physical Sample</text>
+<text x="46" y="201" font-size="18" font-weight="600"></text>
+<text x="46" y="241" font-size="10.5" fill="#475569">Explicit identity and supplied observations</text>
+<rect x="315" y="115" width="250" height="150" rx="12" fill="white" stroke="#cbd5e1"/>
+<rect x="315" y="127" width="4" height="126" rx="2" fill="#2563eb"/>
+<text x="331" y="140" font-size="12" font-weight="700" fill="#2563eb">02</text>
+<text x="331" y="176" font-size="18" font-weight="600">Available Modalities</text>
+<text x="331" y="201" font-size="18" font-weight="600"></text>
+<text x="331" y="241" font-size="10.5" fill="#475569">Selected numeric feature vectors</text>
+<rect x="600" y="115" width="250" height="150" rx="12" fill="white" stroke="#cbd5e1"/>
+<rect x="600" y="127" width="4" height="126" rx="2" fill="#2563eb"/>
+<text x="616" y="140" font-size="12" font-weight="700" fill="#2563eb">03</text>
+<text x="616" y="176" font-size="18" font-weight="600">Modality Encoders</text>
+<text x="616" y="201" font-size="18" font-weight="600"></text>
+<text x="616" y="241" font-size="10.5" fill="#475569">Preprocess and fixed projection</text>
+<rect x="885" y="115" width="250" height="150" rx="12" fill="white" stroke="#cbd5e1"/>
+<rect x="885" y="127" width="4" height="126" rx="2" fill="#2563eb"/>
+<text x="901" y="140" font-size="12" font-weight="700" fill="#2563eb">04</text>
+<text x="901" y="176" font-size="18" font-weight="600">Fusion</text>
+<text x="901" y="201" font-size="18" font-weight="600"></text>
+<text x="901" y="241" font-size="10.5" fill="#475569">Mean in common coordinates</text>
+<rect x="885" y="355" width="250" height="150" rx="12" fill="white" stroke="#cbd5e1"/>
+<rect x="885" y="367" width="4" height="126" rx="2" fill="#2563eb"/>
+<text x="901" y="380" font-size="12" font-weight="700" fill="#2563eb">05</text>
+<text x="901" y="416" font-size="18" font-weight="600">Sample-Level</text>
+<text x="901" y="441" font-size="18" font-weight="600">Prediction</text>
+<text x="901" y="481" font-size="10.5" fill="#475569">Fixed synthetic class prototypes</text>
+<rect x="600" y="355" width="250" height="150" rx="12" fill="white" stroke="#cbd5e1"/>
+<rect x="600" y="367" width="4" height="126" rx="2" fill="#2563eb"/>
+<text x="616" y="380" font-size="12" font-weight="700" fill="#2563eb">06</text>
+<text x="616" y="416" font-size="18" font-weight="600">Confidence /</text>
+<text x="616" y="441" font-size="18" font-weight="600">Entropy</text>
+<text x="616" y="481" font-size="10.5" fill="#475569">Uncalibrated model uncertainty</text>
+<rect x="315" y="355" width="250" height="150" rx="12" fill="white" stroke="#cbd5e1"/>
+<rect x="315" y="367" width="4" height="126" rx="2" fill="#0f766e"/>
+<text x="331" y="380" font-size="12" font-weight="700" fill="#0f766e">07</text>
+<text x="331" y="416" font-size="18" font-weight="600">Next Modality</text>
+<text x="331" y="441" font-size="18" font-weight="600">Recommendation</text>
+<text x="331" y="481" font-size="10.5" fill="#475569">Supplied estimated gains minus cost</text>
+<rect x="30" y="355" width="250" height="150" rx="12" fill="white" stroke="#cbd5e1"/>
+<rect x="30" y="367" width="4" height="126" rx="2" fill="#0f766e"/>
+<text x="46" y="380" font-size="12" font-weight="700" fill="#0f766e">08</text>
+<text x="46" y="416" font-size="18" font-weight="600">Scientific Report /</text>
+<text x="46" y="441" font-size="18" font-weight="600">Provenance</text>
+<text x="46" y="481" font-size="10.5" fill="#475569">Immutable reproducible run record</text>
+<path d="M287,190 L306,190" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M572,190 L591,190" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M857,190 L876,190" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M1010,273 L1010,345" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M877,430 L858,430" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M592,430 L573,430" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M307,430 L288,430" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<text x="30" y="548" font-size="13" fill="#475569">An optional recommendation adds a synthetic observation, then inference is rerun explicitly.</text>
+<text x="30" y="572" font-size="12" fill="#64748b">Generated data and fixed models illustrate mechanics; confidence is not calibrated scientific certainty.</text>
+</g>
+</svg>
